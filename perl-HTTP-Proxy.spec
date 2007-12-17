@@ -14,7 +14,6 @@ Source:		http://www.cpan.org/modules/by-module/HTTP/%{module}-%{version}.tar.bz2
 BuildRequires:	perl(Module::Build)
 BuildRequires:  perl(LWP::UserAgent)
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 The HTTP::Proxy module implements a HTTP proxy, using a HTTP::Daemon to
