@@ -1,20 +1,20 @@
-%define module	HTTP-Proxy
-%define name	perl-%{module}
-%define version 0.23
-%define release %mkrel 1
+%define upstream_name	 HTTP-Proxy
+%define upstream_version 0.24
 
-Name:		%{name}
-Version:	%{version}
-Release:	%{release}
+Name:		perl-%{upstream_name}
+Version:	%perl_convert_version %{upstream_version}
+Release:	%mkrel 1
+
 Summary:	A pure Perl HTTP proxy
-License:	GPL or Artistic
+License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://http-proxy.mongueurs.net/
-Source:		http://www.cpan.org/modules/by-module/HTTP/%{module}-%{version}.tar.bz2
+Source0:	http://www.cpan.org/modules/by-module/HTTP/%{upstream_name}-%{upstream_version}.tar.gz
+
 BuildRequires:	perl(Module::Build)
 BuildRequires:  perl(LWP::UserAgent)
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 The HTTP::Proxy module implements a HTTP proxy, using a HTTP::Daemon to
@@ -25,7 +25,7 @@ The most interesting feature of this proxy object is its ability to
 filter the HTTP requests and responses through user-defined filters.
 
 %prep
-%setup -q -n %{module}-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 chmod 755 eg/*.pl
 
 %build
