@@ -1,15 +1,15 @@
 %define upstream_name	 HTTP-Proxy
-%define upstream_version 0.24
+%define upstream_version 0.300
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	2
+Version:	%perl_convert_version 0.300
+Release:	1
 
 Summary:	A pure Perl HTTP proxy
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://http-proxy.mongueurs.net/
-Source0:	http://www.cpan.org/modules/by-module/HTTP/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/HTTP/HTTP-Proxy-0.300.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Module::Build)
@@ -113,4 +113,5 @@ Import perl-HTTP-Proxy
 
 * Wed Aug 25 2004 Rafael Garcia-Suarez <rgarciasuarez@mandrakesoft.com> 0.13-1mdk
 - Initial MDK release.
+
 
