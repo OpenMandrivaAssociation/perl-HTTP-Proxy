@@ -1,2 +1,4 @@
+removed_sources:
+  HTTP-Proxy-0.24.tar.gz: 7c6db7dc2004d5b1fb80507fc0446ca01f2fa8ba
 sources:
-  "HTTP-Proxy-0.24.tar.gz": 7c6db7dc2004d5b1fb80507fc0446ca01f2fa8ba
+  HTTP-Proxy-0.300.tar.gz: 830f98ef32aa9495d7d8e8707eb174090d8821c6
