@@ -3,7 +3,7 @@
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version 0.300
-Release:	1
+Release:	2
 
 Summary:	A pure Perl HTTP proxy
 License:	GPL+ or Artistic
