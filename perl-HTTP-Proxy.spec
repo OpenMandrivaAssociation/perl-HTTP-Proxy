@@ -8,7 +8,7 @@ Release:	3
 Summary:	A pure Perl HTTP proxy
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://http-proxy.mongueurs.net/
+Url:		https://http-proxy.mongueurs.net/
 Source0:	http://www.cpan.org/modules/by-module/HTTP/HTTP-Proxy-0.300.tar.gz
 
 BuildRequires:	perl-devel
