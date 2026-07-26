@@ -1,9 +1,7 @@
 %define upstream_name	 HTTP-Proxy
-%define upstream_version 0.304
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	0.304
+Release:	2
 
 Summary:	A pure Perl HTTP proxy
 License:	GPL+ or Artistic
@@ -27,7 +25,7 @@ The most interesting feature of this proxy object is its ability to
 filter the HTTP requests and responses through user-defined filters.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 chmod 755 eg/*.pl
 
 %build
@@ -49,8 +47,7 @@ perl Build.PL installdirs=vendor
 * Fri Jul 24 2009 Jérôme Quelin <jquelin@mandriva.org> 0.240.0-1mdv2010.0
 + Revision: 399299
 - update to 0.24
-- using %%perl_convert_version
-- fixed license field
+- using %0.304 fixed license field
 
 * Fri Sep 05 2008 Guillaume Rousse <guillomovitch@mandriva.org> 0.23-1mdv2009.0
 + Revision: 281103
